@@ -83,10 +83,11 @@ button {
     justify-content: center;
     align-items: center;
 }
-    #text{
+
+#text{
     text-align:center;
 font-family:'Caveat';
-
+}
 /* GLASS CARD */
 .form-card {
     background: rgba(255, 255, 255, 0.25);
@@ -104,6 +105,7 @@ h4 {
     font-size: 22px;
     color: #333;
 }
+
 
 /* STEPS */
 .step { display: none; }
@@ -205,10 +207,9 @@ input {
 <!-- FORM -->
 <div id="formSection">
 <div class="form-card">
- <div id="text">
+<div id="text">
 <h3>Before surprise let me ask you some question,For my General Knowledge.....As of your my general knowledge is also important n...</h3>
 </div>
-
 
 <h4>Quick checklist </h4>
 
@@ -326,7 +327,7 @@ nextBtn.onclick = () => {
     let input = steps[step].querySelector("input");
 
     if(input.value.trim() === ""){
-        alert("Answer first Vividha");
+        alert("Answer first 😤");
         return;
     }
 
@@ -376,10 +377,10 @@ myForm.onsubmit = (e) => {
         },800);
 
     } else {
-        alert("❌ Wrong answer! 😄");
+        alert("❌ Wrong answer! Try again 😄");
     }
 };
-
+localStorage.clear();
 
 </script>
 
